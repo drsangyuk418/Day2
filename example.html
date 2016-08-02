@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title> </title>
+</head>
+<body>
+ 
+</body>
+<!--script example.js"></script> -->
+<p id="demo"></p>
+<script>
+	var op ={'rock':1, 'scissors':2,'paper':3};
+	var cmpt;
+	var name = prompt("enter rock scissors paper");
+	var text="";
+	
+while(true){
+cmpt= Math.floor(Math.random()*3+1);
+if (op[name] === cmpt) {
+text='winner is '+name;
+break;}
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</html>
