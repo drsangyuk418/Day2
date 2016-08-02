@@ -11,12 +11,14 @@
 	var cmpt;
 	var name = prompt("enter rock scissors paper");
 	var text="";
+	var i=0;
 if (op[name] <4  )  {
 text ="";
 while(true){
 cmpt= Math.floor(Math.random()*3+1);
+i++;
 if (op[name] === cmpt) {
-text='winner is '+name; 
+text='Your winner is '+name+" after iteration of "+ i; 
 break;
 }
 }
