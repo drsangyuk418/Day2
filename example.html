@@ -1,27 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title> </title>
+<title>Day1 example for HTML</title>
 </head>
 <body>
- 
-</body>
-<!--script example.js"></script> s -->
 <p id="demo"></p> 
 <script>
 	var op ={'rock':1, 'scissors':2,'paper':3};
 	var cmpt;
 	var name = prompt("enter rock scissors paper");
 	var text="";
-	
+if (op[name] <4  )  {
+text ="";
 while(true){
 cmpt= Math.floor(Math.random()*3+1);
 if (op[name] === cmpt) {
 text='winner is '+name; 
-break;}
+break;
 }
-
+}
 document.getElementById("demo").innerHTML = text;
+}  else {
+document.getElementById("demo").innerHTML = "You typed "+name +" Input Error !!!! ";
+}
+ 
 </script>
-
+</body>
 </html>
